@@ -11,23 +11,14 @@ void task1(int n,int *a){
                 }
         }
 }
-int main (int argc, char *args[]){
-        if (argc < 2) {
-            printf("Usage: %s <size>\n", args[0]);
-            return 1;
-        }
+void main (int argc, char *args[]){
         int n = atoi(args[1]);
-        int *a = malloc(n * sizeof(int));
-        if (a == NULL) return 1;
+        int a[n];
         for (int i=0;i<n;i++){
                 a[i] = rand()%10;
         }
-        printf("Array: ");
+        printf("Array:\n");
         for (int i=0;i<n;i++){
                 printf("%d ",a[i]);
         }
-        printf("\nPerfect squares in array:\n");
-        task1(n, a);
-        free(a);
-        return 0;
 }

@@ -1,5 +1,5 @@
 language = "c"
-run = "gcc -o labrab2-1 /home/runner/workspace/src/main.c"
+run = "gcc -o labrab2-1 /home/runner/workspace/src/main.c -lm"
 
 [agent]
 expertMode = true
