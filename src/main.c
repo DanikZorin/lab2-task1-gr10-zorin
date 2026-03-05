@@ -1,4 +1,4 @@
-/* hello.c */
+/* main.c */
 #include <stdio.h>
 
 void main (void)
