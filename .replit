@@ -2,24 +2,4 @@ language = "c"
 run = "gcc -o labrab2-1 /home/runner/workspace/src/main.c -lm"
 
 [agent]
-expertMode = true
-
-[workflows]
-runButton = "Project"
-
-[[workflows.workflow]]
-name = "Project"
-mode = "parallel"
-author = "agent"
-
-[[workflows.workflow.tasks]]
-task = "workflow.run"
-args = "Run Main"
-
-[[workflows.workflow]]
-name = "Run Main"
-author = "agent"
-
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-args = "gcc src/main.c -o main -lm && ./main 10"
+expertMode = false
